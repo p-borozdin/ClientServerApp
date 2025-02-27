@@ -40,8 +40,8 @@ public class Server {
 
                     talkersRepository.addTalker(name, talkerThread);
                     System.out.println("Talker \"" + name + "\" added");
-
-                } catch (IOException exc) {
+                }
+                catch (IOException exc) {
                     throw new RuntimeException(exc);
                 }
             }
