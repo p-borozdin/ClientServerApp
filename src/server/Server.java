@@ -22,6 +22,10 @@ public class Server {
         listener.start();
     }
 
+    public void close() throws IOException {
+        socket.close();
+    }
+
     private class Listener extends Thread {
         
         @Override
